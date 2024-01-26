@@ -1,0 +1,19 @@
+# Don't include data files
+datafiles/*
+!datafiles/__init__.py
+
+# Don't include compiled python files
+__pycache__
+*.pyc
+
+# Don't include environment
+.venv
+NLPwDL_NeuralMachineTranslation.egg-info/*
+
+#Don't include credentials
+.env
+
+# Don't include models except the tokenizer
+models/*
+!models/__init__.py
+!models/tokenizer
